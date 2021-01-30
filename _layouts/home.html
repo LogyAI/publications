@@ -107,40 +107,74 @@
 
 
     <!--Navbar-->
-    <nav class="sticky-top" >
+    <nav class="sticky-top">
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="box-shadow: none;border-bottom: solid 5px rgb(53, 138, 235);">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark"
+        style="box-shadow: none;border-bottom: solid 5px rgb(53, 138, 235);">
         <div class="container ">
-        
-            <!-- Navbar brand -->
-            <a class="navbar-brand p-0" href="https://logy.ai/" style="font-family: 'Poppins', sans-serif;font-weight: 600;font-size: 30px;">Logy.<span style="color: #428bca;">AI</span></a>
+  
+          <!-- Navbar brand -->
+          <a class="navbar-brand p-0" href="https://logy.ai/"
+            style="font-family: 'Poppins', sans-serif;font-weight: 600;font-size: 30px;">Logy.<span
+              style="color: #428bca;">AI</span></a>
+  
+          <!-- Collapse button -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- Collapsible content -->
+          <div class="collapse navbar-collapse" id="basicExampleNav">
+  
+            <!-- Links -->
+            <ul class="mr-auto"></ul>
+            <!-- Links -->
+  
+            <form class="form-inline p-0 m-0">
+              <div class="md-form my-0 mx-3 ">
+                <a href="https://logy.ai/" class="" style="font-weight:500 ;font-size: 12px;color: #5697d0;">HOME</a>
+              </div>
+              
+              
           
-            <!-- Collapse button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-              aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <!-- Collapsible content -->
-            <div class="collapse navbar-collapse" id="basicExampleNav">
-          
-              <!-- Links -->
-              <ul class="mr-auto"></ul>
-              <!-- Links -->
-          
-              <form class="form-inline p-0 m-0">
-                <div class="md-form my-0 mx-3 ">
-                  <a href="https://logy.ai/" class="" style="font-weight:500 ;font-size: 12px;color: #5697d0;">HOME</a>
+              <div class="md-form my-0 mx-3 ">
+                <style>
+                  .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+  }
+  
+                </style>
+                <div class="dropdown">
+                  <a class=" text-white dropdown-toggle" style="font-weight:500 ;font-size: 12px;background: #212121 !important;color: white !important;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>PRODUCTS</b>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="https://logy.ai/myDentist.html">MYDENTIST</a>
+             
+                  </div>
                 </div>
-                <div class="md-form my-0 mx-3 ">
-                  <a href="/articles/" class="text-white" style="font-weight:500 ;font-size: 12px;">ARTICLES</a>
-                </div>
-              </form>
-            </div>
-            <!-- Collapsible content -->
-          
+              </div>
+              <div class="md-form my-0 mx-3 ">
+                <a href="https://logy.ai/AutoML.html" class="text-white" style="font-weight:500 ;font-size: 12px;">AUTOML</a>
+              </div>
+              <div class="md-form my-0 mx-3 ">
+                <a href="https://logy.ai/articles" class="text-white" style="font-weight:500 ;font-size: 12px;">ARTICLES</a>
+              </div>
+              <div class="md-form my-0 mx-3 ">
+                <a href="https://logy.ai/publications" class="text-white" style="font-weight:500 ;font-size: 12px;">PUBLICATIONS</a>
+              </div>
+            </form>
+          </div>
+          <!-- Collapsible content -->
+  
         </div>
-        </nav>
+      </nav>
     </nav>
   <!--/.Navbar-->
 
@@ -265,11 +299,18 @@
               <!-- Links -->
               <h6 class="text-uppercase font-weight-bold" id="foothot">Products</h6>
               <hr class=" mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>
+                <a class="text-primary" id="footbot" href="https://logy.ai/myDentist.html">MyDentist.AI</a>
+              </p>
               <p >
-                  <a class="text-primary" id="footbot" href="https://logy.ai/portal.html">Dental AI</a>
+                <a class="text-primary" id="footbot" href="https://logy.ai/AutoML.html">AutoML</a>
+              </p>
+              
+              <p>
+                  <a class="text-primary" id="footbot" href="https://portal.logy.ai">AutoML Platform</a>
               </p>
               <p>
-                  <a class="text-primary" id="footbot" href="https://portal.logy.ai/">AutoML Platform</a>
+                        <a class="text-primary" id="footbot" href="https://logy.ai/documentation">API Documentation</a>
               </p>
             <!--  <p>
                   <a href="#!">Pricing</a>
